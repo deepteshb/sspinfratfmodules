@@ -1,12 +1,6 @@
-terraform {
-  required_providers {
-    docker = {
-      source = "kreuzwerker/docker"
-      version = "2.16.0"
-    }
-  }
+module "docker" {
+    source = "./modules"
+
 }
 
-provider "docker" {
-  # Configuration options
-}
+
