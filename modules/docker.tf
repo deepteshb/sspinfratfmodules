@@ -25,7 +25,7 @@ resource "docker_container" "this" {
 
   ports{
     internal = 80
-    external = 8080
+    external = 8082
   }
 }
 
