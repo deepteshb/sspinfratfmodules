@@ -41,7 +41,3 @@ resource "docker_image" "this" {
 output "containerid" {
   value = docker_container.this.id
 }
-
-output "containerip" {
-  value = docker_container.this.ip_address
-}
