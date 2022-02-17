@@ -1,5 +1,8 @@
 module "docker" {
-    source = "./modules"
+    source = "./modules/docker"
+
+    name = "nginx_app"
+    imagename = "nginx:latest"
 
 }
 
