@@ -6,9 +6,6 @@ terraform {
     }
   }
 }
-provider "docker" {
-  # Configuration options
-}
 
 #variables
 variable "imagename" {
