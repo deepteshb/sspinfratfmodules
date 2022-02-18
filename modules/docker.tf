@@ -36,5 +36,5 @@ resource "docker_image" "this" {
 
 #output
 output "containerid" {
-  value = docker_container.this.id
+  value = module.docker.id
 }
