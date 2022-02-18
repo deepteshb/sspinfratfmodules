@@ -12,7 +12,7 @@ variable "container_name" {
 #Start a container
 resource "docker_container" "this" {
   name  = var.container_name
-  image = docker_image.this.latest
+  image = docker_image.this.name
 }
 
 # Find the latest Ubuntu precise image.
