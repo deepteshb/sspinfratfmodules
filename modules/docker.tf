@@ -21,7 +21,7 @@ variable "name" {
 # Start a container
 resource "docker_container" "this" {
   name  = var.name
-  image = docker_image.this.latest
+  image = docker_image.this.name
 
   ports{
     internal = 80
